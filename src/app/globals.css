@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #222222;
+  color: white;
+  max-width: 2000px;
+  margin: auto;
+}
+.swiper-container {
+  height: 400px; /* Adjust height as needed */
+}

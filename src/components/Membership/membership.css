@@ -1,0 +1,29 @@
+.custom-label {
+  color: white; /* Change label color here */
+}
+.ant-select-multiple .ant-select-selection-placeholder {
+  left: 12px;
+}
+
+.ccv {
+  width: "50vw";
+}
+
+.date {
+  width: "25vw";
+}
+.radio-color {
+  accent-color: red;
+}
+
+.radio-custom .ant-radio-wrapper-checked {
+  accent-color: red;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  background-color: red; /* Change the fill color here */
+}
+
+.custom-label .ant-radio-inner::after {
+  border-color: red; /* Change the fill color for custom-label class */
+}

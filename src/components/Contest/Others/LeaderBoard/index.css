@@ -1,0 +1,40 @@
+.ant-tabs-ink-bar::after {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: #fd8535;
+  width: 100%;
+  transform: translateX(-50%);
+}
+.ant-tabs-ink-bar::before {
+  left: 50%;
+  background: transparent !important;
+}
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-tabs-top
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-tabs-bottom
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-tabs-top
+  > div
+  > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1ae8k9u).ant-tabs-bottom
+  > div
+  > .ant-tabs-nav::before {
+  content: none;
+}
+
+@media screen and (max-width: 768px) {
+  .ant-tabs-nav {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ant-tabs-nav .ant-tabs-tab {
+    width: 100%;
+    text-align: center;
+  }
+}

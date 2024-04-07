@@ -1,0 +1,9 @@
+.transparent-modal .ant-modal-content {
+  padding: 230px 10px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ) !important; /* Adjust the alpha value as needed */
+}
