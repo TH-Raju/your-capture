@@ -10,7 +10,7 @@ const Features = () => {
   return (
     <div className="text-center my-36 ">
       <div>
-        <h1 className="text-3xl">Key Features Of Your Capture Awards</h1>
+        <h1 className="text-3xl">Key Features Of Your Capture Awar ds</h1>
         {/* <p className="font-thin text-xl lg:w-[35%] mx-auto mt-3">
           We are constantly working to bring new updates and features to Upload,
           such as:
@@ -25,9 +25,7 @@ const Features = () => {
           />
           <h1 className="text-xl font-bold">Photographer of the year</h1>
           <p className="font-thin w-[70%]  mx-auto ">
-            Create individual gallery pages for different types of photography
-            (e.g., landscapes, portraits, wildlife) to showcase your
-            versatility.
+          Capturing moments that transcend time, Photographer of the Year unveils the world's beauty through a lens of innovation and emotion. 
           </p>
         </div>
         <Link
@@ -41,12 +39,10 @@ const Features = () => {
           />
           <h1 className="text-xl font-bold">Create a Team</h1>
           <p className="font-thin w-[70%]  mx-auto ">
-            Create individual gallery pages for different types of photography
-            (e.g., landscapes, portraits, wildlife) to showcase your
-            versatility.
+          A dynamic ensemble of diverse talents united by a common goal, synergy  ing creativity, innovation, and excellence to achieve success.
           </p>
         </Link>
-        <div className="border border-site-color flex flex-col justify-center items-center gap-5 p-6 rounded-md">
+        <Link href="/exhibitions" className="border border-site-color flex flex-col justify-center items-center gap-5 p-6 rounded-md">
           <Image
             src={AllImages.Exhibition}
             alt="feature"
@@ -54,11 +50,9 @@ const Features = () => {
           />
           <h1 className="text-xl font-bold">Host a Exhibition</h1>
           <p className="font-thin lg:w-[70%]  mx-auto ">
-            Create individual gallery pages for different types of photography
-            (e.g., landscapes, portraits, wildlife) to showcase your
-            versatility.
+          Experience innovation and creativity at our immersive exhibition showcasing cutting-edge art, technology, and culture
           </p>
-        </div>
+        </Link>
       </div>
 
       <div>

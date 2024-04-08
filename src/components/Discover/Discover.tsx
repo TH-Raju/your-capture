@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AllImages } from "@/assets/AllImage";
 import { Button, Modal } from "antd";
@@ -34,6 +34,32 @@ const Discover = () => {
   const closeModal = () => {
     setModalOpenIndex(null);
   };
+
+  useEffect(() => {
+    // Disable context menu
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // Disable certain key combinations
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + Shift + C, Ctrl + U
+      if (
+        e.keyCode === 123 ||
+        (e.ctrlKey && e.shiftKey && e.keyCode === 73) || // Ctrl + Shift + I
+        (e.ctrlKey && e.shiftKey && e.keyCode === 74) || // Ctrl + Shift + J
+        (e.ctrlKey && e.shiftKey && e.keyCode === 67) || // Ctrl + Shift + C
+        (e.ctrlKey && e.keyCode === 85) // Ctrl + U
+      ) {
+        e.preventDefault();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('contextmenu', (e) => e.preventDefault());
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []); // Empty dependency array ensures this effect runs only once on component mount
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-2 items-center justify-center justify-items-center ">
@@ -106,3 +132,4 @@ const Discover = () => {
 };
 
 export default Discover;
+
