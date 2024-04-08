@@ -17,7 +17,7 @@ const Features = () => {
         </p> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 mx-10">
-        <div className="border border-site-color flex flex-col justify-center items-center gap-5 rounded-md">
+        <Link href="/photographer-of-the-year" className="border border-site-color flex flex-col justify-center items-center gap-5 rounded-md">
           <Image
             src={AllImages.POTY}
             alt="feature"
@@ -27,7 +27,7 @@ const Features = () => {
           <p className="font-thin w-[70%]  mx-auto ">
           Capturing moments that transcend time, Photographer of the Year unveils the world's beauty through a lens of innovation and emotion. 
           </p>
-        </div>
+        </Link>
         <Link
           href="/contest/create-team"
           className="border border-site-color flex flex-col justify-center items-center gap-5 rounded-md"
