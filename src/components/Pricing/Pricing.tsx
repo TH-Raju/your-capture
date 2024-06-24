@@ -60,7 +60,12 @@ const Pricing = () => {
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
 
-                <span className="text-gray-700">Host Exhibition Contest</span>
+                <span className="text-gray-700">Normal Host</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
+
+                <span className="text-gray-700">Host Exhibition</span>
               </li>
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
@@ -135,7 +140,7 @@ const Pricing = () => {
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
 
-                <span className="text-gray-700">Host Contest</span>
+                <span className="text-gray-700">Normal Host</span>
               </li>
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
