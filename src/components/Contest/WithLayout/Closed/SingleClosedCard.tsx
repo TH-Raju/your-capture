@@ -39,7 +39,7 @@ const SingleClosedCard = ({ data }: { data: any }) => {
           </div>
           <div className="flex flex-col items-center justify-center gap-2  px-2 ">
             <Button
-              className="px-4 py-1 uppercase  text-black rounded-md mt-5 bg-white"
+              className="px-4 py-1 uppercase  text-black rounded-md mt-5 bg-white cursor-not-allowed"
               style={{ color: "#fd8533", border: "none" }}
             >
               Closed
@@ -47,7 +47,7 @@ const SingleClosedCard = ({ data }: { data: any }) => {
           </div>
         </div>
         {/* Bottom buttons */}
-        <div className="flex justify-center items-center w-full absolute bottom-0 space-x-4 bg-[#181818] pt-1">
+        {/* <div className="flex justify-center items-center w-full absolute bottom-0 space-x-4 bg-[#181818] pt-1">
           <div className=" flex flex-col justify-center items-center">
             <Image
               src={AllImages.contest.contestDollar}
@@ -81,7 +81,7 @@ const SingleClosedCard = ({ data }: { data: any }) => {
             />
             <p className="text-center text-xl mt-1  font-semibold">68 M</p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* <Modal

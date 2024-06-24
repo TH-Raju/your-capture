@@ -10,14 +10,17 @@ const Features = () => {
   return (
     <div className="text-center my-36 ">
       <div>
-        <h1 className="text-3xl">Key Features Of Your Capture Awar ds</h1>
+        <h1 className="text-3xl">Key Features Of Your Capture Awards</h1>
         {/* <p className="font-thin text-xl lg:w-[35%] mx-auto mt-3">
           We are constantly working to bring new updates and features to Upload,
           such as:
         </p> */}
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 my-10 mx-10">
-        <Link href="/photographer-of-the-year" className="border border-site-color flex flex-col justify-center items-center gap-5 rounded-md">
+        <Link
+          href="/photographer-of-the-year"
+          className="border border-site-color flex flex-col justify-center items-center gap-5 rounded-md"
+        >
           <Image
             src={AllImages.POTY}
             alt="feature"
@@ -25,8 +28,23 @@ const Features = () => {
           />
           <h1 className="text-xl font-bold">Photographer of the year</h1>
           <p className="font-thin w-[70%]  mx-auto ">
-          Capturing moments that transcend time, Photographer of the Year unveils the world's beauty through a lens of innovation and emotion. 
+            Capturing moments that transcend time, Photographer of the Year
+            unveils the world's beauty through a lens of innovation and emotion.
           </p>
+          <Button
+            className="border-none text-white border-orange-400  mx-3 mb-4 "
+            style={{
+              color: "black",
+              backgroundColor: "#fd8533",
+              border: "1px solid #fd8533",
+            }}
+          >
+            <div className="flex items-center justify-center gap-2">
+              {" "}
+              <span>Coming soon... </span>
+              <MdArrowForward className="h-5 w-5" />
+            </div>
+          </Button>
         </Link>
         <Link
           href="/contest/create-team"
@@ -38,20 +56,54 @@ const Features = () => {
             className="h-32 my-5 w-fit object-cover rounded-md"
           />
           <h1 className="text-xl font-bold">Create a Team</h1>
-          <p className="font-thin w-[70%]  mx-auto ">
-          A dynamic ensemble of diverse talents united by a common goal, synergy  ing creativity, innovation, and excellence to achieve success.
+          <p className="font-thin w-[70%]  mx-auto mb-14">
+            A dynamic ensemble of diverse talents united by a common goal,
+            synergy ing creativity, innovation, and excellence to achieve
+            success.
           </p>
+          {/* <Button
+            className="border-none text-white border-orange-400  mx-3 mb-4 "
+            style={{
+              color: "black",
+              backgroundColor: "#fd8533",
+              border: "1px solid #fd8533",
+            }}
+          >
+            <div className="flex items-center justify-center gap-2">
+              {" "}
+              <span>Coming soon... </span>
+              <MdArrowForward className="h-5 w-5" />
+            </div>
+          </Button> */}
         </Link>
-        <Link href="/exhibitions" className="border border-site-color flex flex-col justify-center items-center gap-5 p-6 rounded-md">
+        <Link
+          href="/exhibitions"
+          className="border border-site-color flex flex-col justify-center items-center gap-5 p-6 rounded-md"
+        >
           <Image
             src={AllImages.Exhibition}
             alt="feature"
             className="h-32 my-5 w-fit rounded-md"
           />
           <h1 className="text-xl font-bold">Host a Exhibition</h1>
-          <p className="font-thin lg:w-[70%]  mx-auto ">
-          Experience innovation and creativity at our immersive exhibition showcasing cutting-edge art, technology, and culture
+          <p className="font-thin lg:w-[70%]  mx-auto mb-14">
+            Experience innovation and creativity at our immersive exhibition
+            showcasing cutting-edge art, technology, and culture
           </p>
+          {/* <Button
+            className="border-none text-white border-orange-400  mx-3 mb-4 "
+            style={{
+              color: "black",
+              backgroundColor: "#fd8533",
+              border: "1px solid #fd8533",
+            }}
+          >
+            <div className="flex items-center justify-center gap-2">
+              {" "}
+              <span>Host a Exhibition </span>
+              <MdArrowForward className="h-5 w-5" />
+            </div>
+          </Button> */}
         </Link>
       </div>
 
@@ -75,7 +127,7 @@ const Features = () => {
           >
             <div className="flex items-center justify-center gap-2">
               {" "}
-              <span>Upload Image </span>
+              <span>Register now </span>
               <MdArrowForward className="h-5 w-5" />
             </div>
           </Button>

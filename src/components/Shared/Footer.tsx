@@ -6,6 +6,7 @@ import { FaTwitter, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import { AllImages } from "@/assets/AllImage";
 import { useState } from "react";
+import Link from "next/link";
 
 const Footer = () => {
   const [hovered, setHovered] = useState(false);
@@ -95,6 +96,21 @@ const Footer = () => {
             >
               <FaLinkedinIn className="h-5 w-5" />
             </div>
+          </div>
+          <div className="flex gap-5">
+            <Link href="/faq">
+              <p className="text-xs text-center text-gray-400">FAQ</p>
+            </Link>
+            <Link href="/privacy-policy">
+              <p className="text-xs text-center text-gray-400">
+                Privacy Policy
+              </p>
+            </Link>
+            <Link href="/terms-condition">
+              <p className="text-xs text-center text-gray-400">
+                Terms & Conditions
+              </p>
+            </Link>
           </div>
         </div>
       </div>

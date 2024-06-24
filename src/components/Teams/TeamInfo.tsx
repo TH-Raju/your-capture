@@ -16,7 +16,11 @@ const TeamInfo = () => {
           </p>
         </div>
         <div className="flex  flex-col justify-center items-center ">
-          <Image src={AllImages.team.teammates} alt="team-chat" />
+          <Image
+            src={AllImages.team.teammates}
+            alt="team-chat"
+            className="h-28 w-28"
+          />
           <p className=" w-[55%] text-center">
             Improve your skills with help from Teammates
           </p>

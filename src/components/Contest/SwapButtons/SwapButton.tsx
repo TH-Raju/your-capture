@@ -32,7 +32,7 @@ const SwapButtons = () => {
             className="h-6 w-fit"
             alt="boost"
           />
-          <span className="text-white ">Swap</span>
+          <span className="text-white ">Trade</span>
         </h1>
       ),
       children: <SwapContent />,
@@ -85,7 +85,7 @@ const SwapButtons = () => {
               className={`border px-3 py-1 rounded-md my-2`}
               onClick={() => openModalAndSetActiveTab("1")} // Open modal and set active tab to 1
             >
-              0 Swap <span className="border px-1 py-0 rounded-full">+</span>
+              0 Trade <span className="border px-1 py-0 rounded-full">+</span>
             </button>
           </div>
           <div className="flex flex-col justify-center items-center">

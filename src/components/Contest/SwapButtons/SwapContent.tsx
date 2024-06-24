@@ -18,13 +18,13 @@ const SwapContent = () => {
           alt="swap"
         />
         <h1 className="text-white text-xl font-semibold">
-          The Science of Swapping
+          The Science of Trading
         </h1>
       </div>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-3">
         <div className="bg-gray-200 text-center rounded-lg py-2  flex flex-col justify-center items-center">
-          <h1 className="text-base font-semibold">Single Swap</h1>
-          <p className="text-lg font-bold my-1"> 1 Swap</p>
+          <h1 className="text-base font-semibold">Single Trade</h1>
+          <p className="text-lg font-bold my-1"> 1 Trade</p>
           <button
             className="bg-site-color text-white px-3 py-1 rounded-md mt-3"
             onClick={() => setPaymentModalOpen(true)}
@@ -33,8 +33,8 @@ const SwapContent = () => {
           </button>
         </div>
         <div className="bg-gray-200 text-center rounded-lg py-2  flex flex-col justify-center items-center">
-          <h1 className="text-base font-semibold">Swap in a box</h1>
-          <p className="text-lg font-bold my-1"> 8 Swap</p>
+          <h1 className="text-base font-semibold">Trade in a box</h1>
+          <p className="text-lg font-bold my-1"> 8 Trade</p>
           <button
             className="bg-site-color text-white px-3 py-1 rounded-md mt-3"
             onClick={() => setPaymentModalOpen(true)}
@@ -43,8 +43,8 @@ const SwapContent = () => {
           </button>
         </div>
         <div className="bg-gray-200 text-center rounded-lg py-2  flex flex-col justify-center items-center">
-          <h1 className="text-base font-semibold">Sack of Swap</h1>
-          <p className="text-lg font-bold my-1"> 20 Swap</p>
+          <h1 className="text-base font-semibold">Sack of Trade</h1>
+          <p className="text-lg font-bold my-1"> 20 Trade</p>
           <button
             className="bg-site-color text-white px-3 py-1 rounded-md mt-3"
             onClick={() => setPaymentModalOpen(true)}
@@ -53,8 +53,8 @@ const SwapContent = () => {
           </button>
         </div>
         <div className="bg-gray-200 text-center rounded-lg py-2  flex flex-col justify-center items-center">
-          <h1 className="text-base font-semibold">Bucket of Swap</h1>
-          <p className="text-lg font-bold my-1"> 40 Swap</p>
+          <h1 className="text-base font-semibold">Bucket of Trade</h1>
+          <p className="text-lg font-bold my-1"> 40 Trade</p>
           <button
             className="bg-site-color text-white px-3 py-1 rounded-md mt-3"
             onClick={() => setPaymentModalOpen(true)}

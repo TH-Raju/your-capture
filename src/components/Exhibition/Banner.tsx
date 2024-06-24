@@ -13,8 +13,8 @@ const ExhibitionBanner = () => {
           // src={AllImages.exhibition.exhibitionBanner}
           src={AllImages.Exhibition}
           alt="Image Alt Text"
-          className="rounded-md object-cover opacity-45"
-          fill
+          className="rounded-md object-cover opacity-45 z-10 "
+          objectFit="cover"
         />
       }
     >

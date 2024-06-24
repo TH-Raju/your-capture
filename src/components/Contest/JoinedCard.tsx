@@ -196,7 +196,7 @@ const JoinedCard = () => {
                 className="h-5 w-fit mr-2"
                 alt="vote"
               />
-              <span className="uppercase text-sm"> swap</span>
+              <span className="uppercase text-sm"> trade</span>
             </Button>
             <Button
               className="flex items-center justify-center bg-gray-900 px-8 py-1"
@@ -397,7 +397,7 @@ const JoinedCard = () => {
                 className="h-5 w-fit mr-2"
                 alt="vote"
               />
-              <span className="uppercase text-sm"> swap</span>
+              <span className="uppercase text-sm"> Trade</span>
             </Button>
             <Button
               className="flex items-center justify-center bg-gray-900 px-8 py-1"

@@ -4,7 +4,7 @@ import { AllImages } from "@/assets/AllImage";
 import Image from "next/image";
 import { StarFilled } from "@ant-design/icons";
 import { useState } from "react";
-import { Button, Modal, Progress } from "antd";
+import { Button, Modal, Popover, Progress } from "antd";
 import { RiTeamFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -16,18 +16,25 @@ const Steps = () => {
       <div className="flex">
         <div className="w-1/4">
           <div className="relative mb-2">
-            <div
-              className="w-10 h-10 mx-auto bg-white rounded-full text-lg text-white flex items-center"
-              onClick={() => setTrophyOpen(true)}
+            <Popover
+              placement="bottomRight"
+              title={"APPRENTICE"}
+              content={"Contents "}
+              // arrow={mergedArrow}
             >
-              <span className="text-center flex justify-center text-white w-full">
-                <Image
-                  src={AllImages.contest.lock}
-                  className="h-6 w-fit"
-                  alt="icon"
-                />
-              </span>
-            </div>
+              <div
+                className="w-10 h-10 mx-auto bg-white rounded-full text-lg text-white flex items-center"
+                onClick={() => setTrophyOpen(true)}
+              >
+                <span className="text-center flex justify-center text-white w-full">
+                  <Image
+                    src={AllImages.contest.lock}
+                    className="h-6 w-fit"
+                    alt="icon"
+                  />
+                </span>
+              </div>
+            </Popover>
           </div>
 
           <div className="text-xs text-center md:text-base">APPRENTICE</div>
@@ -50,16 +57,22 @@ const Steps = () => {
                 ></div>
               </div>
             </div>
-
-            <div className="w-10 h-10 mx-auto bg-white rounded-full text-lg text-white flex items-center">
-              <span className="text-center flex justify-center text-white w-full">
-                <Image
-                  src={AllImages.contest.lock}
-                  className="h-6 w-fit"
-                  alt="icon"
-                />
-              </span>
-            </div>
+            <Popover
+              placement="bottomRight"
+              title={"STUDENT"}
+              content={"Contents "}
+              // arrow={mergedArrow}
+            >
+              <div className="w-10 h-10 mx-auto bg-white rounded-full text-lg text-white flex items-center">
+                <span className="text-center flex justify-center text-white w-full">
+                  <Image
+                    src={AllImages.contest.lock}
+                    className="h-6 w-fit"
+                    alt="icon"
+                  />
+                </span>
+              </div>
+            </Popover>
           </div>
 
           <div className="text-xs text-center md:text-base">STUDENT</div>

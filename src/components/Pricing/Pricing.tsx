@@ -86,7 +86,7 @@ const Pricing = () => {
                 <p className="mt-2 sm:mt-4">
                   <strong className="text-3xl font-bold text-gray-900 sm:text-4xl ">
                     {" "}
-                    $30,95
+                    $29,95
                   </strong>
                 </p>
                 <p className="text-black text-center">(Per Month)</p>
@@ -135,7 +135,7 @@ const Pricing = () => {
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
 
-                <span className="text-gray-700">Host Exhibition Contest</span>
+                <span className="text-gray-700">Host Contest</span>
               </li>
               <li className="flex items-center gap-3">
                 <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
