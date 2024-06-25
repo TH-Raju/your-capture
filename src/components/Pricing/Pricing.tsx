@@ -35,6 +35,79 @@ const Pricing = () => {
               />
             </div>
           </div>
+          {/* premium card  */}
+
+          <div className="rounded-2xl bg-white   p-6 shadow-sm ring-1  sm:order-last sm:px-8 h-full flex flex-col items-center justify-between">
+            <div className="text-center top-[10%] flex justify-center items-center gap-2">
+              <Image
+                src={AllImages.price.pro}
+                alt="premium"
+                className="h-8 w-fit"
+              />
+              <h2 className="text-4xl font-medium  text-gray-900">PREMIUM</h2>
+            </div>
+            <p className="text-site-color text-xl ">What You’ll Get</p>
+            <ul className="leading-10 mt-3">
+              <li className="flex items-center gap-3">
+                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
+                <span className="text-gray-700 leading-5 lg:leading-10">
+                  {" "}
+                  Create a Team
+                </span>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
+
+                <span className="text-gray-700">Normal Host</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
+                <span className="text-gray-700"> Monthly bundle</span>
+              </li>
+
+              <li className="flex items-center gap-3">
+                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
+
+                <span className="text-gray-700">2x Exhibition entry </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <MdCancel className="text-red-500 h-4 w-fit" />
+                <span className="text-gray-700">
+                  {" "}
+                  Enter Photographer of the year
+                </span>
+              </li>
+            </ul>
+            <div className="border-t border-dashed border-site-color w-full">
+              <div className="flex flex-col items-center ">
+                <p className="mt-2 sm:mt-4">
+                  <strong className="text-3xl font-bold text-gray-900 sm:text-4xl ">
+                    {" "}
+                    $19,95
+                  </strong>
+                </p>
+                <p className="text-black text-center">(Per Month)</p>
+
+                <Link href="/membership/pro">
+                  <Button
+                    className="border-none text-white border-orange-400  mx-3 my-8 "
+                    style={{
+                      color: "black",
+                      backgroundColor: "#fd8533",
+                      border: "1px solid #fd8533",
+                    }}
+                  >
+                    <div className="flex items-center justify-center gap-2">
+                      {" "}
+                      <span>Chooses</span>
+                      <MdArrowForward className="h-5 w-5" />
+                    </div>
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
 
           {/* Pro card  */}
 
@@ -97,80 +170,6 @@ const Pricing = () => {
                 <p className="text-black text-center">(Per Month)</p>
 
                 <Link href="/membership/premium">
-                  <Button
-                    className="border-none text-white border-orange-400  mx-3 my-8 "
-                    style={{
-                      color: "black",
-                      backgroundColor: "#fd8533",
-                      border: "1px solid #fd8533",
-                    }}
-                  >
-                    <div className="flex items-center justify-center gap-2">
-                      {" "}
-                      <span>Chooses</span>
-                      <MdArrowForward className="h-5 w-5" />
-                    </div>
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* premium card  */}
-
-          <div className="rounded-2xl bg-white   p-6 shadow-sm ring-1  sm:order-last sm:px-8 h-full flex flex-col items-center justify-between">
-            <div className="text-center top-[10%] flex justify-center items-center gap-2">
-              <Image
-                src={AllImages.price.pro}
-                alt="premium"
-                className="h-8 w-fit"
-              />
-              <h2 className="text-4xl font-medium  text-gray-900">PREMIUM</h2>
-            </div>
-            <p className="text-site-color text-xl ">What You’ll Get</p>
-            <ul className="leading-10 mt-3">
-              <li className="flex items-center gap-3">
-                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
-                <span className="text-gray-700 leading-5 lg:leading-10">
-                  {" "}
-                  Create a Team
-                </span>
-              </li>
-
-              <li className="flex items-center gap-3">
-                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
-
-                <span className="text-gray-700">Normal Host</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
-                <span className="text-gray-700"> Monthly bundle</span>
-              </li>
-
-              <li className="flex items-center gap-3">
-                <GoCheckCircleFill className="text-green-500 h-4 w-fit" />
-
-                <span className="text-gray-700">2x Exhibition entry </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <MdCancel className="text-red-500 h-4 w-fit" />
-                <span className="text-gray-700">
-                  {" "}
-                  Enter Photographer of the year
-                </span>
-              </li>
-            </ul>
-            <div className="border-t border-dashed border-site-color w-full">
-              <div className="flex flex-col items-center ">
-                <p className="mt-2 sm:mt-4">
-                  <strong className="text-3xl font-bold text-gray-900 sm:text-4xl ">
-                    {" "}
-                    $19,95
-                  </strong>
-                </p>
-                <p className="text-black text-center">(Per Month)</p>
-
-                <Link href="/membership/pro">
                   <Button
                     className="border-none text-white border-orange-400  mx-3 my-8 "
                     style={{
